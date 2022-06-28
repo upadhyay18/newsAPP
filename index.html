@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Samachar Patrika</title>
+</head>
+
+<body class="m-0 p-0">
+    <!-- webSite name goes here-->
+    <div class="bg-dark text-center container-fluid p-4">
+        <h2 class="text-white me-auto ms-auto">समाचार<span class="text-warning"> Patrika</span></h2>
+    </div>
+
+     <!--slide show news-->
+     <div id="carouselExampleFade" class="carousel slide carousel-fade t-0" data-bs-ride="carousel">
+        <!-- feed sliding news here-->
+        <div class="carousel-inner" id="news-slide-feed"></div>
+        <!-- news -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <!-- navbar -->
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#genral" id="genral">Genral</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#business" id="business" >Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sports" id="sport">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#tehnology" id="technology">Technology</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#entertainment" id="entertainment">Entertainment</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="text" id="newsQuery" placeholder="Search news">
+                            <button class="btn btn-outline-warning" type="button" id="searchBtn">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- News  -->
+        <div>
+            <div class="row m-3" id="newsType"></div>
+            <div class="row me-2 ms-2" id="newsdetails"></div>
+        </div>
+
+        <!-- footer -->
+        <div class="mt-5">
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+                  <div class="container-fluid m-0 p-0">
+                    <h5 class="text-white me-auto ms-auto">News<span class="text-warning">App</span></h5>
+                  </div>
+                </nav>
+              </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

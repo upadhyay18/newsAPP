@@ -1,0 +1,23 @@
+.carousel-inner {
+  padding: 10px;
+  margin: 10px;
+}
+
+.lnshort-card {
+  width: 100%;
+}
+
+.lnshort-card img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.lnshort-card-img-body {
+  width: 35%;
+  float: left;
+}
+
+.lnshort-card-body {
+  width: 60%;
+  float: right;
+}
